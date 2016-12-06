@@ -116,8 +116,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background: #2C3E50;
-/*  background: rgba(100,100,200)*/
+  background: none;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -129,6 +128,10 @@ header .intro-text .skills {
 .navbar-custom .navbar-brand {
   color: white;
 }
+#resume {
+  background-color:lightgrey;
+}
+
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
