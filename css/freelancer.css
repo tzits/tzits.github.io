@@ -145,7 +145,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: #a6b996;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -154,13 +154,13 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li.active a {
   color: white;
-  background: #18BC9C;
+  background: #a6b996;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
   color: white;
-  background: #18BC9C;
+  background: #a6b996;
 }
 .navbar-custom .navbar-toggle {
   color: white;
@@ -170,9 +170,9 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #18BC9C;
+  background-color: #a6b996;
   color: white;
-  border-color: #18BC9C;
+  border-color: #a6b996;
 }
 @media (min-width: 768px) {
   .navbar-custom {
@@ -336,15 +336,16 @@ footer h3 {
   margin-bottom: 15px;
 }
 footer .footer-above {
-  padding-top: 50px;
-  background-color: #2C3E50;
+  padding-top: 20px;
+  background-color: #1f1e24;
 }
 footer .footer-col {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 footer .footer-below {
-  padding: 25px 0;
-  background-color: #233140;
+  padding-top: 0px;
+  padding-bottom: 25px;
+  background-color: #1f1e24;
 }
 .btn-outline {
   color: white;
@@ -358,8 +359,8 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
-  background: white;
+  color: white;
+  background: #a6b996;
   border: solid 2px white;
 }
 .btn-primary {
