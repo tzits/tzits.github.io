@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="short.css">
+<script type="text/javascript" src="short.js"></script>
+	<title>Run For Your Life</title>
+</head>
+<body>
+<div class="big">
+
+<div class="track">
+<div id="lane1">
+	<div id="pOne">
+	</div>
+</div>
+<div id="lane2">
+	<div id="pTwo"></div>
+</div>
+</div>
+
+<div class="track" id="track2">
+<div id="lane3">
+	<div id="pThree">
+	</div>
+</div>
+<div id="lane4">
+	<div id="pFour"></div>
+</div>
+</div>
+
+<div class="track" id="track3">
+<div id="lane5">
+	<div id="pFive">
+	</div>
+</div>
+<div id="lane6">
+	<div id="pSix"></div>
+</div>
+</div>
+
+</div>
+<br>
+<button onclick="createPlayer()">Ready Players?</button>
+<button id="right" onclick="restart()">Play Again?</button>
+<audio src="chariots.ogg" autoplay></audio>
+<input type='button' class='btn' onclick="location.href='../index.html';" value='Back'>
+</body>
+</html>

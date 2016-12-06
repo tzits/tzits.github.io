@@ -1,0 +1,85 @@
+.bolt {
+	content: url("usain-bolt.jpg");
+	height: 10vh;
+	padding: 10px;
+	left: 10px;
+}
+.runner {
+	content: url("runner.png");
+	height: 10vh;
+	padding: 10px;
+	left: 10px;
+}
+.track {
+	background-color: rgb(232,97,59);
+	position: relative;
+	height: 27vh;
+	display: block;
+	margin: 0;
+	width: 98vw;
+
+}
+#lane1, #lane3, #lane5 {
+	border: 5px solid white;
+	display: block;
+	position: absolute;
+	top: -5px;
+	width: 80%;
+	height: 49%;
+}
+#lane2 {
+	display: block;
+	position: absolute;
+	border: 5px solid white;
+	top: 48%;
+	height: 51%;
+	width: 80%;
+}
+#lane4, #lane6{
+	display: block;
+	position: absolute;
+	border: 5px solid white;
+	top: 48%;
+	height: 51%;
+	width: 80%;
+}
+
+#track2{
+	background-color: rgb(232,97,59);
+	height: 27vh;
+	display: block;
+	top: 27%;
+}
+#track3{
+	background-color: rgb(232,97,59);
+	height: 27vh;
+	display: block;
+	top: 54%;
+}
+#pOne, #pTwo, #pThree, #pFour, #pFive, #pSix {
+	position: absolute;
+
+}
+#begin {
+	background-color: red;
+	width: 200px;
+	height: 80px;
+	border-radius: 10px;
+	float: right;
+	margin-right: 200px;
+	margin-bottom: 10px;x
+	color: white;
+	font-size: 40px;
+}
+#right {
+	float: right;
+	background-color: none;
+}
+button {
+	border-radius: 10px;
+	background-color: none;
+}
+.btn {
+	border-radius: 10px;
+	background-color: none;
+}
