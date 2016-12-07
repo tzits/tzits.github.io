@@ -70,6 +70,7 @@ hr.star-primary:after {
 }
 .img-centered {
   margin: 0 auto;
+  height: 200px;
 }
 @media (min-width: 700px) {
   header {
@@ -241,7 +242,7 @@ section.success {
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(24, 188, 156, 0.9);
+  background: #a6b996;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -480,6 +481,10 @@ fieldset[disabled] .btn-success.active {
 .scroll-top .btn:focus {
   outline: none;
 }
+/*.portfolio-modal {
+  height:40vh;
+  width:40vw;
+}*/
 .portfolio-modal .modal-content {
   border-radius: 0;
   background-clip: border-box;
@@ -513,29 +518,6 @@ fieldset[disabled] .btn-success.active {
   opacity: 0.3;
 }
 
-.portfolio-modal .close-modal .lr {
-  height: 75px;
-  width: 1px;
-  margin-left: 35px;
-  background-color: #2C3E50;
-  transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  /* IE 9 */
-  -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
-  z-index: 1051;
-}
-.portfolio-modal .close-modal .lr .rl {
-  height: 75px;
-  width: 1px;
-  background-color: #2C3E50;
-  transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  /* IE 9 */
-  -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
-  z-index: 1052;
-}
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;

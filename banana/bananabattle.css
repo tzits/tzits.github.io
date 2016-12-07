@@ -1,0 +1,62 @@
+h1, h2 {
+	text-align: center;
+	color: yellow;
+}
+p{
+	color: yellow;
+}
+
+.box {
+    float:left;
+    width: 4vw;
+    height: 4vw;
+    background-color:rgb(100,157,68);
+	border: 1px solid white;
+}
+.clearIt {
+	clear: both;
+}
+#pOne {
+	float: left;
+	background-image: url("http://images.clipartpanda.com/monkey-banana-clipart-4i9yMbRiE.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: 4vw;
+}
+#pTwo {
+	float: right;
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/7b/63/76/7b637609bcfe39f3ece58febf5042176.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 4vw;
+}
+#pThree {
+	float: left;
+	padding: 40px;
+}
+#pFour {
+	float: right;
+	padding: 40px;
+}
+body {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/736x/0b/a1/3e/0ba13e2fb81ef9b280307493de85fadc.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button {
+	background-color: red;
+	width: 140px;
+	height: 70px;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	animation: pulse 5s infinite;
+}
+.button:active {
+  background-color: #E8001B;
+  box-shadow: 0 5px #666;
+  transform: translateY(8px);
+}
+#restart {
+	display: none;
+}
