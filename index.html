@@ -201,22 +201,26 @@
 
 
 <style>
-body {
-  font-size: 1.2em;
+#under {
+    font-size: 17px;
+    width:84%;
 }
 .left {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 5px;
+  width: 30%;
 }
 .right {
-  width: 590px;
+  width: 65%;
   display: inline-block;
+  padding-left: 5px;
+  padding-right: 7px;
+
 }
 .header {
   color:rgb(50, 115, 173);
 }
 .content {
-  font-size: 1.2em
+  font-size: 17px!important
 }
 a {
   color: blue;
@@ -228,100 +232,133 @@ a {
 #pdf {
 	display:block;
 }
+h2 {
+    font-size:2.4em!important;
+}
 }
 </style>
-<div class='clearfix'>
+<div>
+<span style='font-size:2.1em; padding-left:130px;'><b>Toby Zitsman</b></span> <span style='font-size: 1em; margin-left:2em'> Palo Alto, California</span>
+</div>
+<br>
+<div>
+<h2 style='margin-top:2px'>Technologies</h2>
+  <div style='margin-left:15px;padding-top: 10px'>
+  <span style='float:left;margin-left: 50px; width:250px;font-size:1.2em'>
+    HTML5<br>
+    CSS3<br>
+    Javascript<br>
+    Ruby<br>
+    Rails
+  </span>
+  <span style='float:left; margin-left: 40px;width:250px;font-size:1.2em'>
+   Express<br>
+   Angular<br>
+   PostgreSQL<br>
+   MongoDB<br>
+   Jasmine
+   </span>
+   <span style='float:left; margin-left: 50px;width:250px;font-size:1.2em'>
+   AJAX<br>
+   Photoshop<br>
+   REACT<br>
+   SASS<br>
+   Rspec
+   </span>
+   </div>
+</div>
+<br>
 <div class='left' style='float:left'>
-<h2 class='header' style='font-size:37px!important'>Education</h2>
-<h4>General Assembly</h4>
-<p class='content'>Sept-Nov 2016 <br>
-Developing Web Apps in Javascript and <br>
-Ruby as part of a 12-week immersive <br>
-program
-</p>
+  <div class='rc'>
+  
+ 
+  <h2 id='interests' style='padding-top:20px'>Interests</h2>
+  <p style='padding-top:8px'><b>Triathlons:</b></p>
 
-<p class='content'>
-Bowdoin College <br>
-May 2013 <br>
-BS in Biology with focus on Ecology <br>
-Minor in English <br>
-</p>
+  <p class='content' style='padding-bottom:13px'>2015, 2016 Qualifier for Age-Group
+  National Championships in both
+  Sprint and Olympic Distances<br>
+  In training for Ironman 2017
+  </p>
+  <p><b>Hiking:</b><p>
+  <p class='content' style='padding-bottom:13px'>
+  2016 Appalachian Trail Northbound<br>
+  2016 Benton Mackaye Trail Northbound<br>
+  2015 Overland Track Thru Hike
+  </p>
+   <p><b>Creative Writing:</b><p>
+  <p class='content' style='padding-bottom:13px'>
+  Have written 300 page fiction novel manuscript
+  currently in second round of editing
+  </p>
+   <p><b>Scuba Diving:</b><p>
+  <p class='content' style='padding-bottom:15px'>
+  PADI Certified Rescue Diver with over eighty dives on four continents
+  </p>
+  
+  <h3 id='education'>Education</h3>
+  <span style='font-size:1.2em; display:block'><b>General Assembly</b></span>
+  <p class='content'>Sept-Nov 2016</p>
 
-<h3>Skills</h3>
-<p class='content'>
-Technologies: HTML5, CSS3, Javascript, <br>
-Ruby, Rails, Javascript, Express, Angular,<br>
-PostgreSQL, MongoDB, Jasmine, AJAX, <br>
-Photoshop, REACT, BackBone, APEX,<br>
-</p>
-<h3>Interests</h3>
-<h5>Triathlons:</h5>
-
-<p class='content'>2015, 2016 Qualifier for Age-Group <br>
-National Championships in both <br>
-Sprint and Olympic Distances <br>
-In training for Ironman July 2017
-</p>
-<h5>Hiking:</h5>
-<p class='content'>
-2016 Appalachian Trail Northbound <br>
-Thru Hike <br>
-2016 Benton Mackaye Trail Northbound <br>
-Thru Hike <br>
-2015 Overland Track Thru Hike
-</p>
-<h5>Creative Writing:</h5>
-<p class='content'>
-Wrote 300 page fiction novel manuscript <br>
-currently in second round of editing
-</p>
+  <span style='font-size:1.2em; display:block'><b>Bowdoin College</b></span>
+  <p class='content'>
+  May 2013 <br>
+  BS in Biology with focus on Ecology and Zoology<br>
+  Minor in English <br><br>
+  </div>
 </div>
-<div class='clearfix'>
-<div class='right' style='font-size: 1.2em!important'>
-<h2 class='header' style='font-size:37px!important'>Experience</h2>
+<div class='right'>
+
+<h2 style='display:inline-block;padding-top:3px;margin-top:18px;padding-right:450px;'>Experience</h2>
 
 
-Developing Web Apps in JavaScript using the MEAN Stack, Ruby on Rails, <br>
-Projects: <br>
+<span style='font-size:1.4em; padding-top:8px;display:block'><b>General Assembly</b></span>
+<br>
+<span style='font-size:17px'>Completed a Web Development Immersive program, focussed on launching full-stack web apps in a collaborative environment. The primary technologies used were MEAN stack and Ruby on Rails</span>
+
+<p><b>Projects:</b></p>
+
+
+<p style='padding-left: 42px;font-size:17px'><u><b>Hyker</b></u> is an app that allows users to learn about and plan gear selection for long distance hiking and cycling trips. I controlled this app in every step, from coming up with the idea, to final deployment. This app uses Ruby on Rails.<br>
+<a href='https://github.com/tzits/hikingapp'>https://github.com/tzits/hikingapp</a><br>
+<a href='https://hyker.herokuapp.com/'>https://hyker.herokuapp.com/</a></p>
+
+<p style='padding-left: 42px;font-size:17px'><u><b>.paws()</b></u>: is an app that allows users to browse a list of available pets as well as list their own for adoption. I ensured that responsibility was delegated appropriately, as well as integrating all of the Angular functionality and creating much of the backend. It was created using MEAN stack and Bootstrap <br>
+<a href='https://github.com/tzits/mean-paws'>https://github.com/tzits/mean-paws</a><br>
+<a href='https://pawsadopt.herokuapp.com/'>https://pawsadopt.herokuapp.com/</a></p>
+
+<p style='padding-left: 42px;font-size:17px'><u><b>Swolemates</b></u>: is a fitness app with an emphasis upon allowing users to challenge friends to compete and determine a winner. I oversaw the routing, as well a good portion of the styling and much of the User model functionality. This app was created using Ruby on Rails.<br>
+<a href='https://github.com/teddycoleman/swolemates'>https://github.com/teddycoleman/swolemates</a><br>
+<a href='http://official-swolemates.herokuapp.com/'>http://official-swolemates.herokuapp.com/</a></p>
+
+<p style='padding-left: 42px;'><u><b>Vagabunnies</b></u>: allows users to report their travel experiences in cities of their choosing and to share those experiences with the world. I took ownership over gem installation as well as helping style the site and organizing the data model relationships. This app uses Ruby on Rails, SASS, and Foundation<br>
+<a href='https://github.com/Brikky/project-vagabond'>https://github.com/Brikky/project-vagabond</a><br>
+<a href='vagabond-tales.herokuapp.com'>vagabond-tales.herokuapp.com</a></p>
+</div>
+</div>
+<div id='under'>
+<h3 id='other'>Other Relevant Experience</h3>
+
+
+<span style='font-size:1.1em; float:left'><b>Massachusetts General Hospital</b></span> <span style='float:right;'>Clinical Research Coordinator </span><br> 
+<span style='float:right'>July 2014-March 2016</span><br>
 <ul>
-
-<li><u><b>Hyker</b></u>: Creative app where users are able to learn about and choose gear necessary for completing long distance hiking trips. Called upon personal experience along with consulting with UX designer to create an optimal user experience. This uses Ruby on Rails along with Backbone.js<br>
-  <a href='#'>Heroku-link</a> </li><br>
-
-
-<li><u><b>Swolemates</b></u>: Self designed app created in a five day sprint in a small development team. Swolemates in a fitness app with an emphasis upon allowing users to challenge friends to compete and determine a winner. The app also allows users to keep track of their workouts and track their fitness progress. This app was created using Ruby on Rails.<br>
-<a href='#'>Heroku-link</a> </li><br>
-
-
-<li><u><b>Vagabunnies</b></u>: An app created in a three day sprint in a team of three. Vagabunnies allows users to report their travel experiences in cities of their choosing and to share those experiences with the world. This app was created and designed using Ruby on Rails, SASS, Foundation<br>
-<a href='#'>Heroku-link</a></li><br>
-
-
-<li><u><b>.paws()</b></u>: Design in a four day sprint with two codesigners and creators, .paws() is an app that allows users to browse a list of available pets as well as list and remove their own. The owners can also favorite pets and contact owners to arrange adoption. It was created using MEAN stack and bootstrap <br>
-<a href='#'>Heroku-link</a></li><br>
+<li>Managed user databases and performed QA and queries within the dataset</li>
+<li>Created and oversaw the daily operations of a multi-departmental team in a fast paced clinical trials setting</li>
+<li>Contacted subjects for scheduling and for technical assistance, including designing user friendly walk-throughs</li>
 </ul>
-
-<h3 class='header'>Other Relevant Experience</h3>
-
-
-<span style='font-size:1.1em'>Massachusetts General Hospital</span> <span style='float:right; margin-right:10px'>Clinical Research Coordinator</span> <br>
+<span style='font-size:1.1em; float:left'><b>Columbia University</b></span> <span style='float:right;'>Research Assistant</span><br>
+<span style='float:right'>Summer 2011, Summer 2012</span><br>
 <ul>
-<li>Created and oversaw the day to day operations of a multi-department team in a fast paced clinical trials setting</li>
-<li>Contacted subjects for scheduling and for technical assistance, including designing user friendly walk-throughs
-Managed user databases and performed QA and queries within the dataset </li>
-</ul>
-
-<span style='font-size:1.1em'>Columbia University</span> <span style='float:right; margin-right:10px'>Research Assistant</span><br>
-<ul>
-<li>Managed the database and collection of a large, inter-departmental FDA device study</li>
-<li>Taught coworkers best practices and served as mentor to new employees</li>
+<li>Managed the database and data collection of a large, inter-departmental FDA device study and taught coworkers best practices</li>
+<li>Served as mentor to new employees</li>
+<li>Helped research and update collection techniques in order to align federal and local regulations</li>
 </ul>
 </div>
 </div>
-</div>
 
-     <a class='btn btn-default' href='zitsman_resume.pdf'>View</a>
-     <a class= 'btn btn-default' href='zitsman_resume.pdf' download>Download PDF</a></div>
+     <a class='btn btn-default' href='Zitsmanreferencealgoria.pdf'>View</a>
+     <a class= 'btn btn-default' href='Zitsmanreferencealgoria.pdf' download>Download PDF</a></div>
 	
      </section>
     <!-- Contact Section -->
