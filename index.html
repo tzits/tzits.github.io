@@ -22,6 +22,12 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js'></script>
+    <script src='js/app.js'></script>
+
+Copy
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -198,21 +204,6 @@
 
 
 <style>
-#under {
-    font-size: 17px;
-    width:84%;
-}
-.left {
-  padding-right: 5px;
-  width: 30%;
-}
-.right {
-  width: 65%;
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 7px;
-
-}
 .content {
   font-size: 17px!important
 }
@@ -232,9 +223,9 @@ h2 {
 }
 </style>
 
-<div>
-<h2>Technologies</h2>
-  <div class='col-sm-12'>
+<div ng-app="port">
+
+ <div class='col-sm-12'>
     <div class='col-sm-3'><img class='center-block pickie' src='https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png' title='HTML'></div>
     <div class='col-sm-3'><img class='center-block pickie' src='http://wpguru.co.uk/wp-content/uploads/2013/09/CSS-Logo-214x300.png' title='CSS'></div>
     <div class='col-sm-3'><img class='center-block pickie' src='http://nadyascreatures.com/web-development/images/javascript.svg' title='JS'></div>
@@ -249,50 +240,14 @@ h2 {
 
     <div class='col-sm-3'><img class='center-block pickie' src='https://upload.wikimedia.org/wikipedia/en/thumb/4/45/MongoDB-Logo.svg/527px-MongoDB-Logo.svg.png' title='MongoDB'></div>
     <div class='col-sm-3'><img class='center-block pickie' src='http://www.andibuchanan.org/img/postgreslogo.png' title='PostgreSQL'></div>
-
+    <div class='col-sm-3'><img class='center-block pickie' src='http://vectorlogofree.com/wp-content/uploads/2014/02/25231-github-cat-in-a-circle-icon-vector-icon-vector-eps.png' title='Git'></div>
     <div class='col-sm-3'><img class='center-block pickie' src='http://www.alphanetrix.gr/images/product/Adobe/Adobe.png' title='Photoshop'></div>
    </div>
 </div>
+  <div ng-view>
+        </div>
+
 <br>
-<div class='left' style='float:left'>
-  <div class='rc'>
-  
- 
-  <h2 id='interests' style='padding-top:20px'>Interests</h2>
-  <p style='padding-top:8px'><b>Triathlons:</b></p>
-
-  <p class='content' style='padding-bottom:13px'>2015, 2016 Qualifier for Age-Group
-  National Championships in both
-  Sprint and Olympic Distances<br>
-  In training for Ironman 2017
-  </p>
-  <p><b>Hiking:</b><p>
-  <p class='content' style='padding-bottom:13px'>
-  2016 Appalachian Trail Northbound<br>
-  2016 Benton Mackaye Trail Northbound<br>
-  2015 Overland Track Thru Hike
-  </p>
-   <p><b>Creative Writing:</b><p>
-  <p class='content' style='padding-bottom:13px'>
-  Have written 300 page fiction novel manuscript
-  currently in second round of editing
-  </p>
-   <p><b>Scuba Diving:</b><p>
-  <p class='content' style='padding-bottom:15px'>
-  PADI Certified Rescue Diver with over eighty dives on four continents
-  </p>
-  
-  <h3 id='education'>Education</h3>
-  <span style='font-size:1.2em; display:block'><b>General Assembly</b></span>
-  <p class='content'>Sept-Nov 2016</p>
-
-  <span style='font-size:1.2em; display:block'><b>Bowdoin College</b></span>
-  <p class='content'>
-  May 2013 <br>
-  BS in Biology with focus on Ecology and Zoology<br>
-  Minor in English <br><br>
-  </div>
-</div>
 <div class='right'>
 
 <h2 style='display:inline-block;padding-top:3px;margin-top:18px;padding-right:450px;'>Experience</h2>
@@ -302,12 +257,13 @@ h2 {
 <br>
 <span style='font-size:17px'>Completed a Web Development Immersive program, focussed on launching full-stack web apps in a collaborative environment. The primary technologies used were MEAN stack and Ruby on Rails</span>
 
+
 <p><b>Projects:</b></p>
 
 
 <p style='padding-left: 42px;font-size:17px'><u><b>Hyker</b></u> is an app that allows users to learn about and plan gear selection for long distance hiking and cycling trips. I controlled this app in every step, from coming up with the idea, to final deployment. This app uses Ruby on Rails.<br>
 <a href='https://github.com/tzits/hikingapp'>https://github.com/tzits/hikingapp</a><br>
-<a href='https://hyker.herokuapp.com/'>https://hyker.herokuapp.com/</a></p>
+<a href='https://hykergear.herokuapp.com/'>https://hykergear.herokuapp.com/</a></p>
 
 <p style='padding-left: 42px;font-size:17px'><u><b>.paws()</b></u>: is an app that allows users to browse a list of available pets as well as list their own for adoption. I ensured that responsibility was delegated appropriately, as well as integrating all of the Angular functionality and creating much of the backend. It was created using MEAN stack and Bootstrap <br>
 <a href='https://github.com/tzits/mean-paws'>https://github.com/tzits/mean-paws</a><br>
@@ -322,8 +278,108 @@ h2 {
 <a href='vagabond-tales.herokuapp.com'>vagabond-tales.herokuapp.com</a></p>
 </div>
 </div>
-<div id='under'>
-<h3 id='other'>Other Relevant Experience</h3>
+
+<div>
+  <div class='rc'>
+  
+ 
+  <h2 id='interests' style='padding-top:20px'>Interests</h2>
+<!--   <p style='padding-top:8px'><b>Triathlons:</b></p> -->
+<div class='col-sm-3 center-block'>
+<a data-target="#interestModal1" class="portfolio-link" data-toggle="modal">
+<img style='height:157px' src='http://png-5.vector.me/files/images/2/8/286199/bicycle_thumb'>
+</a>
+</div>
+
+  <div class='col-sm-3 center-block'>
+  <a data-target="#interestModal2" class="portfolio-link" data-toggle="modal">
+  <img style='height:157px' src='http://motivatememike.com/assets/Mountain_Clipart.png'>
+  </a>
+  </div>
+ 
+<!--    <p><b>Creative Writing:</b><p> -->
+  <p class='content' style='padding-bottom:13px'>
+
+  </p>
+  <div class='col-sm-3 center-block'>
+  <a data-target="#interestModal3" class="portfolio-link" data-toggle="modal">
+    <img style='height:157px;width:131px;' src='http://www.clipartkid.com/images/801/scuba-tank-club-penguin-wiki-the-free-editable-encyclopedia-about-5Naw0t-clipart.png'>
+    </a>
+    </div>
+  <div class='col-sm-3 center-block'>
+    <a data-target="#interestModal4" class="portfolio-link" data-toggle="modal">
+  <img style='height:157px' src='http://4vector.com/i/free-vector-paper-write-pen_102703_PaperWritePen.png'>
+  </a>
+  </div>
+<div class="modal fade" id="interestModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Triathlons</h4>
+      </div>
+      <div class="modal-body">
+        Age-Group National Championships Qualifier for
+        Sprint and Olympic Distances 2015, 2016<br>
+        In training for Ironman 2017
+      </div>
+   </div>
+  </div>
+</div><div class="modal fade" id="interestModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Hiking</h4>
+      </div>
+      <div class="modal-body">
+        2016 Appalachian Trail Northbound Thru Hike<br>
+        2016 Benton Mackaye Trail Northbound Thru Hike<br>
+        2015 Overland Track Thru Hike
+      </div>
+    </div>
+  </div>
+</div><div class="modal fade" id="interestModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Scuba Diving</h4>
+      </div>
+      <div class="modal-body">
+          PADI Certified Rescue Diver with over eighty dives on four continents
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="interestModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Creative Writing</h4>
+      </div>
+      <div class="modal-body">
+          Completed first draft of 300+ page fiction novel manuscript
+          currently in second round of editing
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <h3 id='Education'>Education</h3>
+  <span style='font-size:1.2em; display:block'><b>General Assembly</b></span>
+  <p class='content'>Sept-Nov 2016</p>
+
+  <span style='font-size:1.2em; display:block'><b>Bowdoin College</b></span>
+  <p class='content'>
+  May 2013 <br>
+  BS in Biology with focus on Ecology and Zoology<br>
+  Minor in English <br><br>
+  </div>
+</div>
+<div id='under' class='row'>
+<h3 id='other'>My Past Life</h3>
 
 
 <span style='font-size:1.1em; float:left'><b>Massachusetts General Hospital</b></span> <span style='float:right;'>Clinical Research Coordinator </span><br> 
@@ -343,8 +399,8 @@ h2 {
 </div>
 </div>
 
-     <a class='btn btn-default' href='Zitsmanreferencealgoria.pdf'>View</a>
-     <a class= 'btn btn-default' href='Zitsmanreferencealgoria.pdf' download>Download PDF</a></div>
+     <a class='btn btn-default' href='ZitsmanResumeAlgolia.pdf'>View</a>
+     <a class= 'btn btn-default' href='ZitsmanResumeAlgolia.pdf' download>Download PDF</a></div>
 	
      </section>
     <!-- Contact Section -->
@@ -668,6 +724,7 @@ h2 {
             </div>
         </div>
     </div>
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>

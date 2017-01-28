@@ -42,3 +42,18 @@
     });
 
 })(jQuery); // End of use strict
+
+angular
+  .module('paws', ['ngRoute'])
+  .config(config)
+
+
+
+config.$inject = ['$routeProvider', '$locationProvider']
+function config(   $routeProvider,  $locationProvider   ) {
+    $routeProvider
+        .when('/', {
+          templateUrl: '../templates/skills',
+          controllerAs: 'skillsCtrl',
+          controller: 'SkillsController'
+        })
