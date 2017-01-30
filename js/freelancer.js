@@ -2,7 +2,7 @@
 
 (function($) {
     "use strict"; // Start of use strict
-
+    
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
@@ -17,7 +17,10 @@
         target: '.navbar-fixed-top',
         offset: 51
     });
-
+    console.log( "ready!" );
+    $('#bobo').click(function() {
+        console.log('banana')
+    })
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function(){ 
             $('.navbar-toggle:visible').click();
@@ -29,6 +32,8 @@
             top: 100
         }
     })
+
+
 
     // Floating label headings for the contact form
     $(function() {
@@ -43,17 +48,4 @@
 
 })(jQuery); // End of use strict
 
-angular
-  .module('paws', ['ngRoute'])
-  .config(config)
 
-
-
-config.$inject = ['$routeProvider', '$locationProvider']
-function config(   $routeProvider,  $locationProvider   ) {
-    $routeProvider
-        .when('/', {
-          templateUrl: '../templates/skills',
-          controllerAs: 'skillsCtrl',
-          controller: 'SkillsController'
-        })
