@@ -77,14 +77,6 @@ hr.star-primary:after {
     height: 800px;
   }
 }
-
-/*header {
-  text-align: center;
-  background-image:url('../img/portfolio/start.png') ;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: white;*/
-}
 header .container {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -217,22 +209,6 @@ section h2 {
   left: 0;
 }
 
-/*#about {
-  background-image: url('../img/portfolio/night.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-#portfolio {
-  background-image: url('../img/portfolio/bad.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: white;
-}*/
-#contact {
-  background-image: url('../img/portfolio/fish.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
 section.success {
   background: none;
   color: white;
