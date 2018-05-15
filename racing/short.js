@@ -105,7 +105,11 @@ function whoWins() {
 			var d = document.getElementById(divs[i])
 			d.style.left = players[i].winPosition;
 			players[i].isMoving = false;
-			alert('The Winner is ' + players[i].name + '!');
+			if (players[i].name != "usain bolt") {
+				alert('The Winner is ' + players[i].name + '!');
+			} else {
+				alert("Usain Bolt Doesn't Lose")
+			}
 			players.splice(i,1);
 			divs.splice(i,1);
 			var myButton = document.getElementById("right");
